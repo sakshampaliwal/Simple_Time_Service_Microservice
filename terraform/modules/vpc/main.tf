@@ -1,3 +1,5 @@
+"Earlier in main.tf you were just passing values. We’re using those values to actually build AWS network infrastructure."
+
 resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
   

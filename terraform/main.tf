@@ -1,6 +1,7 @@
 module "vpc" {
   source = "./modules/vpc"
-  
+
+  "we are passing values into the module like arguments in a function. They need inputs to know what exactly to create."
   project_name        = var.project_name
   vpc_cidr            = var.vpc_cidr
   availability_zones  = var.availability_zones
