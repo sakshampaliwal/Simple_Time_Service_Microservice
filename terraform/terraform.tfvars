@@ -1,3 +1,15 @@
+"This file provides actual values to the variables declared above."
+
+"Terraform does this internally:
+
+1. Reads variables.tf → “OK these are the variables”
+2. Loads default values (if any)
+3. Loads terraform.tfvars → overrides defaults
+4. Loads CLI vars (if provided) → highest priority
+5.Runs plan/apply with the final merged values
+
+It’s like merging configs in layers."
+
 aws_region          = "ap-south-1"
 project_name        = "simple-time-service"
 vpc_cidr            = "10.0.0.0/16"

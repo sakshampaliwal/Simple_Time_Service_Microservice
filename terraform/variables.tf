@@ -1,3 +1,16 @@
+"This file only declares variables.
+Terraform reads this file to understand:
+
+what variables exist
+
+their type
+
+whether default value is provided
+
+whether user must pass a value
+
+It does NOT store actual values."
+
 variable "aws_region" {
   description = "The AWS region to deploy resources to"
   type        = string
